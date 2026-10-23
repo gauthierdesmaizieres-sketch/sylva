@@ -57,7 +57,7 @@ const spriteKlasse = (p, jetzt) => (hpFarbe(hp(p, jetzt)) === 'rot' ? 'durstig' 
 // ---------- Ansichten ----------
 function profilWahl() {
   return `<main class="mitte">
-    <div class="box titel"><h1>PFLANZEN-DEX</h1><div class="logo">${spriteSVG(4, art('sonnenblume').farben)}</div></div>
+    <div class="box titel"><h1>SYLVA</h1><div class="logo">${spriteSVG(4, art('sonnenblume').farben)}</div></div>
     ${db.profile.length ? `<div class="box"><h2>Wer bist du?</h2>${db.profile.map(p =>
       `<button class="knopf breit" data-a="profil-waehlen" data-id="${esc(p.id)}">▶ ${esc(p.name)}</button>`).join('')}</div>` : ''}
     ${db.profile.length < MAX_PROFILE ? `<form class="box" data-f="profil-neu">
@@ -68,7 +68,7 @@ function profilWahl() {
 }
 
 function kopf(pr) {
-  return `<header><span class="logo-text">PFLANZEN-DEX</span>
+  return `<header><span class="logo-text">SYLVA</span>
     <button class="profil-knopf" data-a="profil-wechseln" title="Profil wechseln">👤 ${esc(pr.name)}</button></header>`;
 }
 
