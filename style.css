@@ -1,5 +1,5 @@
 :root {
-  --bg: #e8f0d0;
+  --bg: #e9f2d8;
   --box: #fffef4;
   --ink: #202818;
   --mute: #5a6a48;
@@ -13,7 +13,7 @@
   --text: 'VT323', monospace;
 }
 @media (prefers-color-scheme: dark) {
-  :root { --bg: #18200f; --box: #26301c; --ink: #e8f0d0; --mute: #a8b890; --rand: #0c1008; --akzent: #4f9e3a; }
+  :root { --bg: #1c280f; --box: #26301c; --ink: #e8f0d0; --mute: #a8b890; --rand: #0c1008; --akzent: #4f9e3a; }
 }
 
 * { box-sizing: border-box; }
