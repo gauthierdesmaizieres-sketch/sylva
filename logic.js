@@ -132,6 +132,12 @@ export const ARTEN = [
   { id: 'gummibaum', name: 'Gummibaum', intervall: 10, farben: ['#2a7a3a', '#143a1e', '#8a3a3a'] },
   { id: 'gruenlilie', name: 'Grünlilie', intervall: 7, farben: ['#7ac44a', '#3a7a28', '#ffffff'] },
   { id: 'einblatt', name: 'Einblatt', intervall: 5, farben: ['#3a9a3c', '#1e5a22', '#ffffff'] },
+
+  // --- Fleischfressende Pflanzen (Regen- oder destilliertes Wasser, Erde immer feucht) ---
+  { id: 'dionaea', name: 'Venusfliegenfalle', intervall: 2, karnivor: true, farben: ['#6ab43c', '#3a6b22', '#d8303a'] },
+  { id: 'drosera', name: 'Sonnentau', intervall: 2, karnivor: true, farben: ['#8ab43c', '#4a6b22', '#e04060'] },
+  { id: 'sarracenia', name: 'Schlauchpflanze', intervall: 2, karnivor: true, farben: ['#7aa63c', '#7a2a2a', '#e8c840'] },
+  { id: 'nepenthes', name: 'Kannenpflanze', intervall: 4, karnivor: true, farben: ['#5aa63c', '#2c6326', '#b8303a'] },
   { id: 'sonstige', name: 'Sonstige', intervall: 7, farben: ['#5fae3c', '#2f6b28', '#f5c518'] },
 ];
 

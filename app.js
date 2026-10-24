@@ -44,7 +44,8 @@ function artOptionen(wert) {
   const gruppe = (label, filter) => `<optgroup label="${label}">${optionen(ARTEN.filter(filter).map(a => [a.id, a.name]), wert)}</optgroup>`;
   return gruppe('Aus Früchten', a => a.keimung?.herkunft === 'Frucht')
     + gruppe('Aus der Samentüte', a => a.keimung?.herkunft === 'Tüte')
-    + gruppe('Zimmerpflanzen', a => !a.keimung);
+    + gruppe('Zimmerpflanzen', a => !a.keimung && !a.karnivor)
+    + gruppe('Fleischfressende Pflanzen', a => a.karnivor);
 }
 
 function kpBalken(p, jetzt) {

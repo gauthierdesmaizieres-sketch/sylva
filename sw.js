@@ -1,5 +1,5 @@
 // shortcut: cache-first – bei jeder Änderung an der App VERSION erhöhen, sonst sehen Nutzer die alte Version.
-const VERSION = 'sylva-1';
+const VERSION = 'sylva-2';
 const SHELL = ['./', 'index.html', 'app.js', 'logic.js', 'style.css', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {
